@@ -25,15 +25,32 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-.
+
+While they are similar in that they both recieve functions as arguments and they both execute the function with each elemennt that the array has, .forEach returns undefined while .map returns a new array. 
 
 2. Explain the difference between a callback and a higher order function.
 
+While callback functions are used as arguments by other functions, high order functions have the ability to recieve other functions as parameters. 
+
+
 3. What is closure?
+
+Closures allow us to put functions together and access functions that have been terminated by way of the child of that function. 
+
 
 4. Describe the four rules of the 'this' keyword.
 
+a) Unless it's in strict mode, when no other rules apply, "this" gets defaulted to the window (global scope). If it is in strict mode, then it just returns that it's undefined.  
+b)Explicit Binding- When we use the methods ".call" and "apply", we explicitly define "this". 
+c)Implicit Binding- Look to the left of the "." when you invoke the function. This is the most common way that the keyword "this" is used. 
+d)New Binding- When we're dealing with a constructor function "this" will be reffering to the object being created by the fuction. 
+   
+
+
 5. Why do we need super() in an extended class?
+
+We need "super()" because it calls the constructor of the parent class and thus, gives us access to the properties and methods of the parent function. 
+
 
 ### Task 1 - Project Set up
 
